@@ -1,6 +1,6 @@
 {
   "name": "hd-brochureware-v3",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "FED team brochureware learning",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/justtoconfirm/hd-brochureware-v3#readme",
   "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-loader": "^8.0.6",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   }
