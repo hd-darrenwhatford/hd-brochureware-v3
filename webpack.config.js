@@ -1,3 +1,5 @@
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+
 module.exports = {
     module: {
         rules: [
@@ -9,5 +11,14 @@ module.exports = {
                 }
             }
         ]
-    }
+    },
+    plugins: [
+        new BundleAnalyzerPlugin({
+            analyzerMode: 'disabled',
+            generateStatsFile: true,
+            statsOptions: {
+                source: false
+            }
+        })
+    ]
 }
