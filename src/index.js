@@ -1,5 +1,7 @@
-const sayHello = () => {
-    console.log('Hello World')
-}
+import React from 'react'
+import { render } from 'react-dom'
 
-sayHello()
+render(
+	<h1>Hello World</h1>,
+	document.getElementById('app')
+)
