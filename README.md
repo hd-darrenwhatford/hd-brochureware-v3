@@ -15,6 +15,12 @@ $ npm install
 $ npm run build
 ```
 
+## Webpack Dev Server
+
+```
+$ npm run build:dev
+```
+
 ## Webpack Bundle Analyzer
 
 ```
