@@ -1,4 +1,6 @@
 const env = process.env.NODE_ENV
+const path = require('path')
+
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = {
@@ -12,6 +14,11 @@ module.exports = {
                 }
             }
         ]
+    },
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 9000
     },
     plugins: [
         new BundleAnalyzerPlugin({
