@@ -13,6 +13,7 @@ module.exports = {
             }
         ]
     },
+    devtool: 'source-map',
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
