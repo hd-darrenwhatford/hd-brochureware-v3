@@ -8,7 +8,7 @@ const Button = ({ type = 'button', url = '', children }) => {
 		<a href={url}>{children}</a>
 	
 	const renderButton = () =>
-		<button type={type}>{children}</button>
+		<button {...{type}}>{children}</button>
 	
 	return (
 		isAnchor ? renderAnchor() : renderButton()
