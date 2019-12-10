@@ -1,6 +1,7 @@
 import React from 'react'
+import classNames from 'classnames'
 
-const Button = ({ type = 'button', url = '', children }) => {
+const Button = ({ type = 'button', url = '', className = '', children }) => {
 
 	const isAnchor = url && (url.includes('http') || url.startsWith('#') || url.startsWith('mailto') || url.startsWith('/'))
 	
