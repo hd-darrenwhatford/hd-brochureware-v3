@@ -12,10 +12,10 @@ const Button = ({ type = 'button', url = '', className = '', theme = '', childre
 	const isAnchor = url && (url.includes('http') || url.startsWith('#') || url.startsWith('mailto') || url.startsWith('/'))
 	
 	const renderAnchor = () =>
-		<a href={url}>{children}</a>
+		<a href={url} className={buttonClass}>{children}</a>
 	
 	const renderButton = () =>
-		<button type={type}>{children}</button>
+		<button type={type} className={buttonClass}>{children}</button>
 	
 	return (
 		isAnchor ? renderAnchor() : renderButton()
