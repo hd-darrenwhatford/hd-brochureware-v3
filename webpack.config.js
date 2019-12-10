@@ -15,6 +15,10 @@ module.exports = {
             }
         ]
     },
+    performance: {
+        hints: 'warning'
+    },
+    devtool: 'source-map',
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
