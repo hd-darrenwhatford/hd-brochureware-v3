@@ -3,6 +3,12 @@ import classNames from 'classnames'
 
 const Button = ({ type = 'button', url = '', className = '', children }) => {
 
+    const buttonClass = classNames('btn', className, {
+        'btn--primary' : theme === 'primary',
+        'btn--secondary' : theme === 'secondary',
+        'btn--full-width' : isFullWidth
+    })
+
 	const isAnchor = url && (url.includes('http') || url.startsWith('#') || url.startsWith('mailto') || url.startsWith('/'))
 	
 	const renderAnchor = () =>
