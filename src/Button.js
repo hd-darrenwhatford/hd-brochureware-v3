@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 
-const Button = ({ type = 'button', url = '', className = '', children }) => {
+const Button = ({ type = 'button', url = '', className = '', theme = '', children }) => {
 
     const buttonClass = classNames('btn', className, {
         'btn--primary' : theme === 'primary',
