@@ -13,6 +13,21 @@ module.exports = {
             }
         ]
     },
+    optimization: {
+        runtimeChunk: {
+            name: 'runtime'
+        },
+        splitChunks: {
+            chunks: 'all',
+            cacheGroups: {
+                vendors: {
+                    test: /[\\/]node_modules[\\/]/i,
+                    chunks: 'all',
+                    name: 'vendor'
+                }
+            }
+        }
+    },
     performance: {
         hints: 'warning'
     },
