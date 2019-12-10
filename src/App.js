@@ -6,7 +6,7 @@ const App = () => {
     return (
     	<React.Fragment>
 	    	<Button>Car</Button>
-	    	<Button>Van</Button>
+	    	<Button url="https://www.hastingsdirect.com">Van</Button>
     	</React.Fragment>
     )
 }
