@@ -3,7 +3,6 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Setup
-
 ```
 $ git clone https://github.com/justtoconfirm/hd-brochureware-v3.git
 
@@ -12,19 +11,23 @@ $ npm install
 ```
 
 ## Build
-
 ```
 $ npm run build
 ```
 
-## Webpack Dev Server
+## JavaScript Linter - StandardJS
+```
+$ npm run lint
 
+$ npm run lint:fix		# Fix linting issues
+```
+
+## Webpack Dev Server
 ```
 $ npm run build:dev
 ```
 
 ## Webpack Bundle Analyzer
-
 ```
 $ npm run build:report
 ```
