@@ -12,6 +12,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/justtoconfirm/hd-brochureware-v3.git"
+  }, 
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js"
   },
   "keywords": [],
   "author": "",
