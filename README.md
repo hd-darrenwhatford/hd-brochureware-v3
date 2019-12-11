@@ -21,6 +21,12 @@ $ npm run build
 $ npm run build:dev
 ```
 
+## Testing
+
+```
+$ npm run test
+```
+
 ## Webpack Bundle Analyzer
 
 ```
