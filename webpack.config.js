@@ -45,5 +45,9 @@ module.exports = {
                 source: false
             }
         })
-    ]
+    ],
+    output: {
+        path: path.resolve(__dirname, './dist'),
+        publicPath: '/',
+    }
 }
