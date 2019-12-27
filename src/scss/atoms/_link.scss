@@ -1,0 +1,8 @@
+@import "../variables";
+
+.link {
+    font-size: $text-size-standard;
+    color: $core-brand-colour;
+    text-decoration: none;
+    cursor: pointer;
+}

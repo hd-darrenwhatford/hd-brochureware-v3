@@ -1,0 +1,20 @@
+@import "../variables";
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+blockquote {}
+strong {}
+
+p {}
+
+a {
+    font-size: $text-size-standard;
+    color: $core-brand-colour;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+@import "../variables";
+
+.btn {
+    background-color: $core-brand-colour;
+    font-size: $text-size-standard;
+    color: $core-light-colour;
+    padding: $global-space-small $global-space;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}

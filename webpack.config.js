@@ -1,3 +1,4 @@
+const isDevelopment = process.env.NODE_ENV === 'development'
 const path = require('path')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
@@ -10,6 +11,10 @@ module.exports = {
                 use: {
                     loader: 'babel-loader'
                 }
+            },
+            {
+                test:/\.(s*)css$/,
+                use:['style-loader','css-loader', 'sass-loader']
             }
         ]
     },
